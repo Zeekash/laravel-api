@@ -18,15 +18,24 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get('/companies',function(){
+Route::get('/companies', function () {
     return (Company::all());
 });
 
+//Company Registration
+Route::post('/company/register', 'Api\Frontend\RegistrationApiController@postRegister');
+
+//Home Page
 Route::get('/home', 'Api\Frontend\HomeApiController@homePage');
 
+// Main API
+Route::controller(App\Http\Controllers\Api\Frontend\MainApiController::class)->group(function () {
+    Route::get('/states', 'states');
+    Route::get('/fetch-cities', 'fetchCities');
+});
 // Blog API
-Route::controller(App\Http\Controllers\Api\Frontend\BlogApiController::class)->group(function (){
-    Route::get('/blogs','index');
-    Route::get('/blogs/{post:slug}','show');
-    Route::get('/category/{category:slug}','catShow');
+Route::controller(App\Http\Controllers\Api\Frontend\BlogApiController::class)->group(function () {
+    Route::get('/blogs', 'index');
+    Route::get('/blogs/{post:slug}', 'show');
+    Route::get('/category/{category:slug}', 'catShow');
 });
