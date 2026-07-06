@@ -7,7 +7,7 @@ use App\Models\Company;
 use App\Models\Post;
 use Illuminate\Support\Facades\DB;
 
-class ApiHomeController extends Controller
+class HomeApiController extends Controller
 {
     public function homePage()
     {
