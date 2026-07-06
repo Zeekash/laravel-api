@@ -1,8 +1,6 @@
 <?php
 
 use App\Models\Company;
-use App\User;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,4 +21,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/companies',function(){
     return (Company::all());
 });
-Route::get('/home', 'Api\Frontend\ApiHomeController@homePage');
+
+Route::get('/home', 'Api\Frontend\HomeApiController@homePage');
+
+// Blog API
+Route::controller(App\Http\Controllers\Api\Frontend\BlogApiController::class)->group(function (){
+    Route::get('/blogs','index');
+    Route::get('/blogs/{post:slug}','show');
+    Route::get('/category/{category:slug}','catShow');
+});
