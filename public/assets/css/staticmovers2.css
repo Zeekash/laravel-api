@@ -1,0 +1,234 @@
+#topMoverTwo .call-btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: white;
+    border: 2px solid #c61635;
+}
+
+#topMoverTwo .call-btn:hover {
+    border: 2px solid #c61635;
+    background-color: #c61635;
+    border-radius: 0;
+    color: rgb(255, 255, 255);
+}
+
+#topMoverTwo .call-btn i {
+    padding: 12px;
+    background-color: #c61635;
+    border: none;
+    border-radius: 50%;
+    color: white;
+}
+
+#topMoverTwo .heading1-top-mover {
+    color: #c61635;
+}
+
+#registerForm .form-header {
+    gap: 5px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#registerForm .form-header .stepIndicator {
+    position: relative;
+    flex: 1;
+    padding-bottom: 30px;
+    color: #364a9f;
+}
+
+#registerForm .form-header .stepIndicator.active {
+    font-weight: 600;
+    color: #c61635;
+}
+
+#registerForm .form-header .stepIndicator.finish {
+    font-weight: 600;
+    color: #c61635;
+}
+
+#registerForm .form-header .stepIndicator::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: 9;
+    width: 20px;
+    height: 20px;
+    background-color: #f07f94;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+#registerForm .form-header .stepIndicator.active::before {
+    background-color: #c61635;
+    /* border: 3px solid #d5f9f6; */
+}
+
+#registerForm .form-header .stepIndicator.finish::before {
+    background-color: #c61635;
+    /* border: 3px solid #b7e1dd; */
+}
+
+#registerForm .form-header .stepIndicator::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    width: 100%;
+    height: 3px;
+    background-color: #f3f3f3;
+}
+
+#registerForm .form-header .stepIndicator.active::after {
+    background-color: #f3f3f3;
+}
+
+#registerForm .form-header .stepIndicator.finish::after {
+    background-color: #c61635;
+}
+
+#registerForm .form-header .stepIndicator:last-child:after {
+    display: none;
+}
+
+#registerForm input {
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 1em;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+}
+
+#registerForm input:focus {
+    border: 1px solid #364a9f;
+    outline: 0;
+    box-shadow: none;
+}
+
+#registerForm input.invalid {
+    border: 1px solid #ffaba5;
+}
+
+#registerForm .step {
+    display: none;
+}
+
+#registerForm .form-footer {
+    overflow: auto;
+    gap: 20px;
+}
+
+#registerForm .form-footer button {
+    background-color: #364a9f;
+    border: 1px solid #364a9f !important;
+    color: #ffffff;
+    border: none;
+    padding: 13px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    flex: 1;
+    margin-top: 5px;
+}
+
+#registerForm .form-footer button:hover {
+    opacity: 0.8;
+}
+
+#registerForm .form-footer #prevBtn {
+    background-color: #fff;
+    color: #364a9f;
+}
+
+.bg-greeny {
+    background-color: #364a9f;
+}
+
+.experince-card {
+    border: 2px solid #364a9f;
+    min-height: 14em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.service-card {
+    min-height: 14em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.quote-banner-topmover {
+    border: 3px solid #364a9f;
+    border-radius: 20px;
+    height: 100%;
+    min-height: 22em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.service-badge {
+    position: absolute;
+    top: -1px;
+    border-radius: 0;
+    left: 77%;
+}
+
+.topmover-quote-badge {
+    border-radius: 50%;
+}
+
+.img-of-service {
+    min-height: 16em;
+    width: 100%;
+}
+
+#top-quote-banner button {
+    border: 2px solid #c61635 !important;
+    cursor: pointer;
+    color: black !important;
+}
+
+#top-quote-banner button:hover {
+    border: 2px solid #c61635 !important;
+    cursor: pointer;
+    color: white !important;
+}
+
+.comments-card {
+    border: 2px solid #364a9f;
+    min-height: 22em !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.working-card {
+    min-height: 18em !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.working-card .service-badge {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 4em;
+    width: 4em;
+}
+
+.card-top-movers .col-2-top-mover .list-para {
+    font-family: "Mukta", sans-serif !important;
+}
+
+.card-top-movers .col-2-top-mover button {
+    font-family: "Mukta", sans-serif !important;
+}
+
+.static-bg-clr {
+    background: #f2f2f2 !important;
+}
+
+.icon-top-tick {
+    color: #df1f00;
+}
+
+.logo a img{
+    width: 14em;
+}

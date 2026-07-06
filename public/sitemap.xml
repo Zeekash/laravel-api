@@ -1,0 +1,53 @@
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <sitemap>
+        <loc>https://mymovingjourney.com/sitemap-main.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://mymovingjourney.com/city.sitemap.xml</loc>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://mymovingjourney.com/state-route.sitemap.xml</loc>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://mymovingjourney.com/statetostate.routes.sitemap.xml</loc>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://mymovingjourney.com/mover-states.sitemap.xml</loc>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://mymovingjourney.com/state-move-cost.sitemap.xml</loc>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://mymovingjourney.com/state.sitemap.xml</loc>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://mymovingjourney.com/resources.sitemap.xml</loc>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://mymovingjourney.com/company.sitemap.xml</loc>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://mymovingjourney.com/blog.sitemap.xml</loc>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://mymovingjourney.com/citytostate.routes.sitemap_index.xml</loc>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://mymovingjourney.com/citytocitydiffstate.routes.sitemap_index.xml</loc>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://mymovingjourney.com/statetocity.routes.sitemap_index.xml</loc>
+    </sitemap>
+
+</sitemapindex>

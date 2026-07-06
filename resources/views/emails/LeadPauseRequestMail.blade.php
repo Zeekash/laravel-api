@@ -1,0 +1,1 @@
+{{ $company->company_name }} request to pause his leads.

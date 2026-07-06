@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+    --font-family: var(--para-family), sans-serif;
+}
+
+.FirstSection .container {
+    max-width: 1020px !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "/" !important;
+    padding: 0 5px;
+}
+
+.baneer_content h1 {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #313742;
+    font-family: var(--font-family);
+}
+
+.main_banner_form {
+    padding: 20px 35px;
+    background: #f0f3f6;
+    border-radius: 20px;
+}
+
+.input_outer {
+    background-color: #fff;
+    padding: 8px 30px;
+    border-radius: 50px;
+    border: 0px solid #116087;
+}
+
+.input_outer label {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--para-family);
+    color: #1e1a1a;
+}
+
+.input_outer input {
+    border: none;
+    width: 100%;
+    font-family: var(--para-family);
+    font-size: 14px;
+    outline: 0;
+}
+
+button.get_quote {
+    background-color: #116087;
+    color: #fff;
+    border: 0;
+    padding: 17px 0px;
+    font-family: var(--para-family);
+    font-weight: 400;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.baneer_content .size-select {
+    border: none !important;
+}
+
+.baneer_content .size-select {
+    border: none;
+    width: 100%;
+    font-family: var(--para-family);
+    font-size: 14px;
+    outline: 0;
+    color: #a1a3a1;
+}
+
+.middle_content h2 {
+    font-size: 26px;
+    font-family: var(--font-family);
+    font-weight: 700;
+}
+
+
+.new_card {
+    border: #116087 2px solid;
+    border-radius: 10px;
+}
+
+.content_div p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 35px;
+
+}
+
+.content_div p strong a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: #116087;
+}
+
+.middle_content .company_card {
+    background-color: #f0f3f647;
+    color: #313742;
+    padding: 20px;
+    border-radius: 16px;
+    border: 2px solid #116087;
+    display: flex;
+    gap: 1rem;
+}
+
+.middle_content .company_card .company_logo {
+    width: 110px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    height: 105px;
+}
+
+.middle_content .Company_Info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--font-family);
+    display: inline-flex;
+}
+
+.middle_content .Company_Info .Reviews span {
+    font-size: 21px;
+    font-weight: 600;
+    font-family: var(--font-family);
+    color: black;
+    margin: 5px 0px;
+    display: inline-block;
+}
+
+.middle_content .company_card .dot {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--font-family);
+    text-decoration: underline;
+}
+
+.custom-table-wrapper {
+    border: 1px solid #116087;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 650px;
+    margin: auto;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: white;
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 12px;
+    border-bottom: 1px solid #116087;
+    text-align: left;
+}
+
+.custom-table thead th {
+    background-color: #ffffff;
+}
+
+.custom-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+@media screen and (max-width: 500px) {
+    .baneer_content h1 {
+        font-size: 36px;
+    }
+
+    .main_banner_form {
+        padding: 20px;
+    }
+}

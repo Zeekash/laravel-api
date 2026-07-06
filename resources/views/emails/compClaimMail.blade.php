@@ -1,0 +1,1 @@
+<a href="https://mymovingjourney.com/mover/{{ $company->slug }}">{{ $company->company_name }}</a> is claimed business. 

@@ -1,0 +1,181 @@
+.regForm {
+    background-color: #68967c69;
+    margin: 100px auto;
+    padding: 40px;
+    width: 100%;
+    min-width: 300px;
+    border-radius: 30px;
+    /* border: 1px solid #2b2f3217; */
+}
+
+/* Style the input fields */
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: none;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+label {
+    font-family: var(--para-family);
+    font-weight: 600;
+    color: #17122d;
+    letter-spacing: 0.3px;
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04aa6d;
+}
+
+.regForm :is(#nextBtn, #prevBtn) {
+    height: 60px;
+    background-color: rgb(112 83 177);
+    text-transform: capitalize;
+    font-family: var(--family);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    border: 0;
+    padding: 0px 0px;
+    margin-top: 12px;
+}
+
+h1 {
+    font-family: var(--para-family);
+    font-weight: 700;
+    letter-spacing: 0px;
+    font-size: 32px;
+    color: #17122d;
+    position: relative;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #ae95e5 !important;
+    border-radius: 0px !important;
+}
+
+.user-form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.user-form .input-group-fN-lN {
+    width: 50%;
+}
+
+.user-form .input-group-fN-lN input {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #dbdbdb;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 15px 20px;
+    outline: none;
+}
+
+input::placeholder {
+    font-weight: 600;
+    color: #17122daf !important;
+}
+
+.input-group-phone {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #dbdbdb;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 0px 10px;
+}
+
+.input-group-phone i {
+    color: #b0b0b0;
+    font-size: 16px;
+}
+
+.input-group-phone input {
+    border: none;
+    outline: none;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 769px) {
+    .user-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .user-form .input-group-fN-lN {
+        width: 100%;
+    }
+
+    .regForm {
+        background-color: #68967c29;
+        margin: 100px auto;
+        padding: 25px;
+        width: 100%;
+        min-width: 312px;
+        border-radius: 30px;
+    }
+}
+
+.text1 {
+    background: #ded7f2;
+    border-radius: 2px;
+    text-align: center;
+    padding: 7px 0px;
+    border-radius: 10px;
+    font-family: var(--para-family);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+select#move_size {
+    border: 1px solid #116087 !important;
+    padding: 20px 15px;
+    border-radius: 50px;
+    font-family: var(--para-family);
+    font-weight: 500;
+}

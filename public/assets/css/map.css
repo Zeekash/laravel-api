@@ -1,0 +1,322 @@
+.map_container2 {
+    max-height: 500px !important;
+    min-height: 500px !important;
+    height: 100% !important;
+    position: relative;
+}
+
+.map_container2 svg {
+    position: absolute !important;
+    right: 0 !important;
+    top: 0px !important;
+    bottom: 0 !important;
+    left: -8em !important;
+    width: 120% !important;
+    height: 100% !important;
+}
+
+#map_container {
+    position: relative;
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+}
+
+#map_container svg {
+    position: relative !important;
+    width: 85% !important;
+    height: 100% !important;
+}
+
+#map_container svg text {
+    font-size: 16px;
+    fill: white;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#map_container svg path {
+    fill: #116087;
+    stroke: #fff;
+    cursor: pointer;
+    z-index: -2;
+}
+
+#map_container svg #lines,
+#map_container svg .outer_state_text {
+    stroke: #116087;
+    fill: #116087;
+    cursor: pointer;
+}
+
+#map_container svg path:hover {
+    fill: #fff;
+    stroke: #116087;
+}
+
+#map_container svg #hi-text:hover~#hi {
+    fill: #fff;
+    stroke: #17122d;
+}
+
+#map_container svg #wv-text:hover~#wv {
+    fill: #fff;
+    stroke: #17122d;
+}
+
+#map_container svg #vt-text:hover~#vt {
+    fill: #fff;
+    stroke: #17122d;
+}
+
+#map_container svg #nh-text:hover~#nh {
+    fill: #fff;
+    stroke: #17122d;
+}
+
+#map_container svg #ma-text:hover~#ma {
+    fill: #fff;
+    stroke: #17122d;
+}
+
+#map_container svg #ct-text:hover~#ct {
+    fill: #fff;
+    stroke: #17122d;
+}
+
+#map_container svg #ri-text:hover~#ri {
+    fill: #fff;
+    stroke: #17122d;
+}
+
+#map_container svg #nj-text:hover~#nj {
+    fill: #fff;
+    stroke: #17122d;
+}
+
+#map_container svg #de-text:hover~#de {
+    fill: #fff;
+    stroke: #17122d;
+}
+
+#map_container svg #md-text:hover~#md {
+    fill: #fff;
+    stroke: #17122d;
+}
+
+#map_container svg #dc-text:hover~#dc {
+    fill: #fff;
+    stroke: #17122d;
+}
+
+#map_container svg #wa:hover~#wa-text {
+    fill: #17122d;
+}
+
+#map_container svg #ak:hover~#ak-text {
+    fill: #17122d;
+}
+
+#map_container svg #al:hover~#al-text {
+    fill: #17122d;
+}
+
+#map_container svg #ar:hover~#ar-text {
+    fill: #17122d;
+}
+
+#map_container svg #az:hover~#az-text {
+    fill: #17122d;
+}
+
+#map_container svg #ca:hover~#ca-text {
+    fill: #17122d;
+}
+
+#map_container svg #fl:hover~#fl-text {
+    fill: #17122d;
+}
+
+#map_container svg #ga:hover~#ga-text {
+    fill: #17122d;
+}
+
+#map_container svg #ia:hover~#ia-text {
+    fill: #17122d;
+}
+
+#map_container svg #id:hover~#id-text {
+    fill: #17122d;
+}
+
+#map_container svg #il:hover~#il-text {
+    fill: #17122d;
+}
+
+#map_container svg #in:hover~#in-text {
+    fill: #17122d;
+}
+
+#map_container svg #ks:hover~#ks-text {
+    fill: #17122d;
+}
+
+#map_container svg #ky:hover~#ky-text {
+    fill: #17122d;
+}
+
+#map_container svg #la:hover~#la-text {
+    fill: #17122d;
+}
+
+#map_container svg #me:hover~#me-text {
+    fill: #17122d;
+}
+
+#map_container svg #co:hover~#co-text {
+    fill: #17122d;
+}
+
+#map_container svg #mi:hover~#mi-text {
+    fill: #17122d;
+}
+
+#map_container svg #mn:hover~#mn-text {
+    fill: #17122d;
+}
+
+#map_container svg #mo:hover~#mo-text {
+    fill: #17122d;
+}
+
+#map_container svg #ms:hover~#ms-text {
+    fill: #17122d;
+}
+
+#map_container svg #mt:hover~#mt-text {
+    fill: #17122d;
+}
+
+#map_container svg #nc:hover~#nc-text {
+    fill: #17122d;
+}
+
+#map_container svg #nd:hover~#nd-text {
+    fill: #17122d;
+}
+
+#map_container svg #ne:hover~#ne-text {
+    fill: #17122d;
+}
+
+#map_container svg #nm:hover~#nm-text {
+    fill: #17122d;
+}
+
+#map_container svg #nv:hover~#nv-text {
+    fill: #17122d;
+}
+
+#map_container svg #ny:hover~#ny-text {
+    fill: #17122d;
+}
+
+#map_container svg #oh:hover~#oh-text {
+    fill: #17122d;
+}
+
+#map_container svg #ok:hover~#ok-text {
+    fill: #17122d;
+}
+
+#map_container svg #or:hover~#or-text {
+    fill: #17122d;
+}
+
+#map_container svg #pa:hover~#pa-text {
+    fill: #17122d;
+}
+
+#map_container svg #sc:hover~#sc-text {
+    fill: #17122d;
+}
+
+#map_container svg #tn:hover~#tn-text {
+    fill: #17122d;
+}
+
+#map_container svg #tx:hover~#tx-text {
+    fill: #17122d;
+}
+
+#map_container svg #ut:hover~#ut-text {
+    fill: #17122d;
+}
+
+#map_container svg #sd:hover~#sd-text {
+    fill: #17122d;
+}
+
+#map_container svg #va:hover~#va-text {
+    fill: #17122d;
+}
+
+#map_container svg #wy:hover~#wy-text {
+    fill: #17122d;
+}
+
+@media (max-width: 1200px) {
+    .map_container2 {
+        max-height: 550px !important;
+        min-height: 550px !important;
+    }
+
+    .map_container2 svg {
+        top: 0% !important;
+        left: 0% !important;
+        width: 100% !important;
+    }
+
+    #map_container {
+        max-height: 550px;
+        min-height: 550px;
+    }
+}
+
+@media (max-width: 992px) {
+    .map_container2 {
+        max-height: 525px !important;
+        min-height: 445px !important;
+    }
+
+    #map_container {
+        max-height: 525px;
+        min-height: 415px;
+    }
+}
+
+@media (max-width: 767px) {
+    .map_container2 {
+        max-height: 525px !important;
+        min-height: 310px !important;
+    }
+
+    #map_container {
+        max-height: 525px;
+        min-height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map_container2 {
+        max-height: 525px !important;
+        min-height: 210px !important;
+    }
+
+    #map_container {
+        max-height: 525px;
+        min-height: 210px;
+    }
+}

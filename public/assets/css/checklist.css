@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+
+:root {
+    --family: "Merriweather", serif;
+    --para-family: "Urbanist", sans-serif;
+    --color: #1e1a1a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main.pb-0 {
+    margin-top: 165px !important;
+}
+
+.title-section {
+    text-align: center;
+    padding: 30px 0;
+    background: linear-gradient(96deg, #116087, #becccf);
+    border-radius: 20px;
+}
+
+.title-section h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.title-section p {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    font-family: var(--para-family);
+    margin: 0 auto;
+}
+
+.banner-section {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro-content {
+    padding: 40px 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-content h2 {
+    font-size: 34px;
+    font-weight: 600;
+    font-family: var(--family);
+    color: #09171a;
+    line-height: 1.4em;
+    letter-spacing: 0.5px;
+}
+
+.intro-content p {
+    font-weight: 400;
+    font-family: var(--para-family);
+    font-size: 17px;
+    line-height: 34px;
+}
+
+.checklist-container {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.checklist-section {
+    /* margin-bottom: 30px; */
+    background-color: #fff;
+    padding: 30px 30px 15px 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.checklist-section:last-child {
+    border-bottom: none;
+}
+
+.checklist-section h2 {
+    color: #116087;
+    border-bottom: 2px solid #116087;
+    padding-bottom: 10px;
+    font-family: var(--family);
+    font-weight: 600;
+    font-size: 28px;
+}
+
+/* .check_list {
+    margin-bottom: 20px;
+  } */
+
+/* Entire checklist item as a label */
+.checklist-item {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    /* border: 1px solid #e0e0e0; */
+    /* border-radius: 6px; */
+    margin-bottom: 10px;
+}
+
+/* Top section: checkbox & heading */
+.checklist-top {
+    display: flex;
+    align-items: center;
+}
+
+.checklist-top input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-right: 12px;
+    width: 25px;
+    /* Fixed width */
+    height: 25px;
+    /* Fixed height */
+    border: 2px solid #116087;
+    border-radius: 3px;
+}
+
+.checklist-top input[type="checkbox"]:checked {
+    background-color: #116087;
+    position: relative;
+}
+
+.checklist-top input[type="checkbox"]:checked::after {
+    content: "\f00c";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 24px;
+    /* Adjust as needed */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-family: var(--para-family) !important;
+}
+
+.item-title {
+    font-size: 16px;
+    color: #313742;
+}
+
+/* Content section: aligned with heading */
+.item-details {
+    margin-left: calc(25px + 12px);
+    /* offset equal to checkbox width + margin */
+    font-size: 16px;
+    color: #09171a;
+    font-family: var(--para-family);
+    line-height: 1.6em;
+}
+
+.checklist-section p a {
+    color: #116087;
+    text-underline-offset: 6px;
+    text-decoration: underline;
+    text-decoration-color: #116087;
+}
+
+/* Strikethrough effect when checked */
+.checklist-item.checked .item-title,
+.checklist-item.checked .item-details p {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.item-title p {
+    font-weight: bold;
+    font-family: var(--family);
+    font-size: 20px;
+    color: #09171a;
+    margin-bottom: 0;
+}
+
+/* .item-details {
+    
+} */
+.check_list_btn {
+    border-bottom: 1px solid #3137420d;
+    padding: 20px 0;
+    position: sticky;
+    top: 137px;
+    z-index: 10;
+    background-color: #ffffff;
+}
+
+.check_list_btn button {
+    padding: 10px 25px;
+    /* border-radius: 50px; */
+    background-color: #116087;
+    border: transparent;
+    font-family: var(--family) !important;
+    font-weight: 600;
+    color: #fff;
+    /* display: inline-block; */
+}
+
+#additional_tips {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#additional_tips span {
+    font-weight: bold;
+    font-family: var(--family);
+    font-size: 20px;
+    color: #09171a;
+}
+
+#additional_tips p {
+    font-weight: 400;
+    font-family: var(--para-family);
+    font-size: 17px;
+    line-height: 34px;
+    margin-top: 10px;
+}
+
+#additional_tips p a {
+    color: #116087;
+    text-underline-offset: 6px;
+    text-decoration: underline;
+    text-decoration-color: #116087;
+}
+
+.table_content_checklist a {}
+
+.checklist_bottom {
+    margin: 35px 0px;
+
+}
+
+h3.for_child {
+    margin-left: -35px;
+}
+
+.item-details p {
+    font-size: 16px !important;
+}
+
+.table_content_checklist h2 {
+    font-size: 28px;
+    font-family: var(--para-family);
+    font-weight: 600;
+}
+
+a.anchor_category {
+    font-size: 18px;
+    font-family: var(--para-family);
+    font-weight: 600;
+    color: #116087;
+    line-height: 38px;
+}
+
+a.anchor_category:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px !important;
+}
+
+
+
+.new_card {
+    background-color: #f0f3f6d9;
+    /* width: 88%; */
+    /* box-shadow: 4px 4px 12px #363e3947; */
+    border-radius: 20px;
+}
+
+@media (max-width: 460px) {
+    .checklist-top input[type="checkbox"] {
+        width: 30px;
+        /* Fixed width */
+        height: 25px;
+        /* Fixed height */
+    }
+
+    .checklist-top input[type="checkbox"]:checked::after {
+        font-size: 16px;
+        /* Adjust as needed */
+    }
+
+    .title-section h1 {
+        font-size: 28px;
+    }
+
+    .title-section p {
+        font-size: 16px;
+    }
+
+    .intro-content {
+        padding: 10px;
+    }
+
+    .intro-content h2 {
+        font-size: 25px;
+    }
+
+    .checklist-section {
+        padding: 20px 10px;
+    }
+
+    .checklist-section h2 {
+        font-size: 23px;
+    }
+
+    .item-title {
+        font-size: 18px;
+    }
+}

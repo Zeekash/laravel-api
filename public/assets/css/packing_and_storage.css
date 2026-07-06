@@ -1,0 +1,312 @@
+#local_mover {
+    position: relative;
+    height: 550px;
+}
+
+
+#local_mover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#local_mover::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.315);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.packing-and-storage-main-banner .banner_layout {
+    width: 100%;
+    /* background-image: linear-gradient(rgb(33 38 41 / 40%), rgb(255 255 255 / 95%)), url(../img/banner.webp) !important; */
+    background-color: #68967c1c;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    /* border-radius: 20px; */
+    padding: 20px 40px 40px 40px;
+    border: 0px solid #1e1a1a;
+}
+
+
+#local_mover .mover_heading {
+    width: 100%;
+    padding-block: 10px;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    margin: auto !important;
+    z-index: 1;
+    background-color: #123269a6;
+}
+
+.packing-and-storage-main-banner .banner_header h1 {
+    font-size: 62px;
+    margin-top: 0px;
+    line-height: 1.2em;
+    font-weight: 900;
+    color: #1e1a1a;
+    font-family: var(--family) !important;
+}
+
+.packing-and-storage-main-banner .banner_header p {
+    font-family: var(--para-family);
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+@media (min-width: 767px) and (max-width: 787px) {
+    .packing-and-storage-main-banner .banner_header h1 {
+        font-size: 32px;
+        line-height: 70px;
+    }
+
+    .packing-and-storage-main-banner .banner_header p {
+        font-family: var(--para-family);
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+    .packing-and-storage-main-banner .banner_header h1 {
+        font-size: 32px;
+        line-height: 60px;
+    }
+
+    .packing-and-storage-main-banner .banner_header p {
+        font-family: var(--para-family);
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 575px) {
+    .packing-and-storage-main-banner .banner_header h1 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .packing-and-storage-main-banner .banner_header p {
+        font-family: var(--para-family);
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
+
+}
+
+#local_mover .mover_heading h1 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#local_mover .mover_heading h1 span {
+    font-size: 44px;
+    text-transform: uppercase;
+}
+
+#local_mover .state_form {
+    margin-top: -210px;
+    z-index: 99;
+}
+
+#movers_card {
+    padding-bottom: 30px;
+}
+
+#movers_card h3 {
+    font-family: var(--headign-family);
+    font-weight: 600;
+}
+
+.card {
+    padding: 20px;
+    /* box-shadow: rgb(30 117 187 / 44%) 0px 1px 4px; */
+    border: 2px solid #12326930;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.card .card-header {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+.card .card-header .search_company_logo {
+    width: 110px;
+    height: 100px;
+
+    position: relative;
+}
+
+.card .card-header .search_company_logo img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.card .card-body {
+    padding: 0;
+}
+
+.search_company_heading {
+    position: relative;
+}
+
+.search_company_logo::after {
+    content: '';
+    background-color: rgb(30 117 187 / 32%);
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    right: -10%;
+
+}
+
+p {
+    margin-bottom: 6px;
+    color: rgb(0 0 0 / 85%);
+    font-size: 14.7px;
+    letter-spacing: .5px;
+    font-family: var(--family);
+}
+
+.search_company_heading .card-title {
+    font-family: var(--headign-family);
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 0;
+    color: var(--color);
+}
+
+.search_company_heading .total_rating {
+    font-family: var(--family);
+    font-weight: 500;
+    color: var(--color);
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.card .card-body .personal_info li {
+    color: var(--color);
+    padding: 4px 0;
+    font-size: 16px;
+    font-family: var(--family);
+    font-weight: 400;
+}
+
+.card .card-body .personal_info li span {
+    font-family: var(--headign-family);
+}
+
+.card .stars li {
+    padding: 0px 6px 0px 0px;
+}
+
+.card .stars li i {
+    color: #ff9800;
+}
+
+ul li {
+    padding: 0 0 8px;
+    color: rgb(0 0 0 / 85%);
+    font-size: 14.7px;
+    letter-spacing: .5px;
+    font-family: var(--family);
+}
+
+.card .site {
+    word-break: break-all;
+}
+
+
+@media (min-width: 320px) and (max-width: 660px) {
+    #local_mover {
+        height: 300px;
+    }
+
+    #local_mover .mover_heading {
+
+        top: 90px;
+
+    }
+
+    #local_mover .mover_heading h1 {
+        font-size: 22px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        line-height: 28px;
+    }
+
+    #local_mover .mover_heading h1 span {
+        font-size: 34px !important;
+    }
+
+    .local_subheading {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .card .card-header .search_company_logo::after {
+        content: '';
+        background-color: var(--primary-color);
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: -16%;
+        right: 0%;
+    }
+
+    .card .card-header .search_company_logo {
+        margin-right: none;
+        margin: auto;
+    }
+
+    .card .card-header .search_company_logo {
+        width: 120px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+
+    .search_company_heading {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 390px) and (max-width: 393px) {
+
+    .search_company_heading {
+        margin-top: 0px;
+    }
+
+    .search_company_heading {
+        padding-left: 6px !important;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .card {
+        padding: 14px;
+    }
+}

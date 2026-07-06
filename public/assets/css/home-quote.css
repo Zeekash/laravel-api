@@ -1,0 +1,633 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+    --list-color: #123269;
+
+    --family: "Inter", sans-serif;
+}
+
+#regFormNew {
+    margin: 0px auto;
+
+    font-family: "Sarabun", sans-serif;
+}
+
+#regFormNew.company-show-form {
+    background-color: #bebebe;
+
+    box-shadow: rgb(0 0 0 / 40%) 0px 3px 12px;
+
+    border-radius: 15px;
+
+    border: 5px solid #12326920;
+}
+
+#regFormNew .tab input,
+#regFormNew .tab select {
+    background: #d9e4ee78;
+
+    border: 2px solid #12326940;
+
+    border-radius: 10px;
+
+    padding-left: 1em;
+}
+
+#regFormNew .nextBtn {
+    border-radius: 10px;
+}
+
+#regFormNew .prevBtn {
+    border-radius: 10px;
+}
+
+#regFormNew .tab input:hover,
+#regFormNew .tab select:hover {
+    background: #d9e4ee;
+
+    border: 2px solid #12326980;
+}
+
+#regFormNew .tab input:focus,
+#regFormNew .tab select:focus {
+    background: #d9e4ee;
+
+    border: 2px solid #12326980;
+
+    box-shadow: none;
+}
+
+#regFormNew .tab {
+    display: none;
+}
+
+#regFormNew .step {
+    height: 15px;
+
+    width: 15px;
+
+    margin: 0 2px;
+
+    background-color: #bbbbbb;
+
+    border: none;
+
+    border-radius: 15px;
+
+    display: inline-block;
+
+    opacity: 0.5;
+}
+
+#regFormNew .step.active {
+    opacity: 1;
+
+    background-color: #123269;
+}
+
+#regFormNew .step.finish {
+    background-color: black;
+}
+
+#regFormNew .all-steps {
+    text-align: center;
+
+    margin-top: 30px;
+
+    margin-bottom: 30px;
+}
+
+/* #regFormNew .multi-step-heading {
+
+    position: relative;
+
+} */
+
+#ModalForm {
+    margin: 0px auto;
+
+    font-family: "Sarabun", sans-serif;
+}
+
+#ModalForm .modal-header {
+    border: none;
+}
+
+#ModalForm .modal-header {
+    text-align: center;
+}
+
+#ModalForm .modal-content {
+    position: relative;
+
+    /* background: rgba(255, 255, 255, 0.25);
+
+    backdrop-filter: blur(40px); */
+
+    border-radius: 15px !important;
+
+    padding: 10px 20px;
+}
+
+.img_di img {
+    width: 30px !important;
+}
+
+button#modalPrevBtn.btn-secondary {
+    background-color: var(--bg) !important;
+
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+button#modalNextBtn.btn-secondary {
+    border-radius: 10px !important;
+}
+
+#ModalForm .modal-content::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 50px;
+
+    padding: 2px;
+
+    background: linear-gradient(180deg, #123269, #ffffff);
+
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite: xor;
+
+    mask-composite: exclude;
+
+    z-index: -1;
+}
+
+p.fs-4.mb-0.mt-3.multi-step-heading.text-center {
+    font-family: var(--family) !important;
+    font-weight: 700;
+    font-size: 26px !important;
+    color: #1e1a1a !important;
+    margin: 0px 0px;
+    line-height: 32px !important;
+}
+
+#ModalForm .modal-content form p {
+    color: #000;
+    font-size: 18px !important;
+    font-family: var(--family) !important;
+    /* display: none; */
+    margin-bottom: 0 !important;
+    line-height: 22px;
+    margin-top: 20px;
+}
+
+#ModalForm .modal-content form p span {
+    color: red;
+}
+
+#ModalForm .company-show-form {
+    background-color: transparent !important;
+
+    box-shadow: rgb(0 0 0 / 40%) 0px 3px 12px;
+
+    border-radius: 15px;
+
+    border: 2px solid #12326920;
+}
+
+#ModalForm .multi-step-heading {
+    position: relative;
+}
+
+#ModalForm .modal-content form input::placeholder {
+    font-family: var(--family);
+}
+
+#ModalForm .input-group,
+#row_modal .input-group {
+    padding: 0px 0px;
+
+    margin-bottom: 0;
+
+    border: 2px solid #116087;
+
+    font-weight: 400;
+
+    font-size: 14px;
+
+    line-height: 21px;
+
+    color: #112a2d;
+
+    height: 52px;
+
+    border-radius: 20px;
+}
+
+/*
+
+:is(#ModalForm, #row_modal) input {
+
+    border-radius: 0px 14px 14px 0px !important;
+
+} */
+
+:is(#ModalForm, #row_modal) select {
+    /* border-radius: 0px 14px 14px 0px !important; */
+}
+
+#ModalForm .input-group-text,
+#row_modal .input-group-text {
+    background: transparent;
+
+    border: none;
+
+    border-radius: 20px 0px 0px 20px;
+
+    /* border-radius: 50px; */
+}
+
+#ModalForm .invalid-feedback,
+#row_modal .invalid-feedback {
+    text-align: right;
+
+    margin: 0%;
+}
+
+#ModalForm .bx,
+#row_modal .bx {
+    color: #1e1a1a !important;
+
+    font-size: 30px;
+}
+
+#ModalForm .form-control,
+.form-control:focus,
+#ModalForm .form-select,
+.form-select:focus,
+#row_modal .form-control,
+#row_modal .form-control:focus {
+    /* background-color: transparent !important; */
+
+    border: 2px solid #dfeaec;
+
+    box-shadow: none;
+
+    /* margin-bottom: -6px !important; */
+
+    padding: 0.7rem 1.75rem;
+
+    border-radius: 10px !important;
+}
+
+.input_outer {
+    background-color: #fff !important;
+
+    padding: 8px 20px !important;
+
+    border-radius: 10px !important;
+
+    border: 1px solid #ccd9db !important;
+}
+
+.input_outer input {
+    border: none !important;
+
+    width: 100%;
+
+    font-family: var(--para-family);
+
+    font-size: 14px;
+
+    outline: 0;
+
+    padding: 0 !important;
+}
+
+.step {
+    min-height: 330px !important;
+}
+
+.modal_header_logo {
+    width: 30%;
+}
+
+#ModalForm .btn.sdg {
+    color: white;
+
+    width: 100%;
+}
+
+#ModalForm .bx {
+    color: #363f39;
+
+    font-size: 30px;
+}
+
+#ModalForm .btn.sdg:hover>.bx {
+    color: white;
+}
+
+#ModalForm .form-control:focus,
+#ModalForm .form-select:focus {
+    color: black;
+
+    background-color: #fff;
+
+    outline: none;
+
+    box-shadow: none;
+}
+
+/* ===== MMJ Unique: Date summary styles (Step 3) ===== */
+
+.mmj-date-summary {
+    margin: 10px 0px;
+}
+
+.mmj-date-summary__box {
+    border: 2px dashed #12326940;
+
+    background: #11608717;
+
+    border-radius: 12px;
+
+    padding: 8px 14px;
+
+    font-family: var(--family);
+
+    color: #123269;
+
+    font-size: 14px;
+}
+
+/* Ensure any future conflicting utilities don't force display */
+
+.mmj-date-summary.d-none {
+    display: none !important;
+}
+
+/* ===== MMJ Unique: Move Size Grid (Step 2) ===== */
+
+.mmj-movesize-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+
+    margin-top: 8px;
+}
+
+.mmj-movesize-card {
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding: 6px 2px;
+    border-radius: 14px;
+    border: 2px solid #e3e8ef;
+    background: #ffffff;
+    color: #116087;
+    font-family: var(--family);
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.mmj-movesize-card i {
+    font-size: 18px;
+
+    color: #4d575954;
+}
+.modal-header{
+    padding: 10px 0px !important;
+}
+.mmj-movesize-card span {
+    font-size: 14px;
+
+    color: #20373a;
+}
+
+.mmj-movesize-card:hover {
+    border-color: #c9d4e6;
+
+    box-shadow: 0 2px 8px rgba(18, 50, 105, 0.08);
+}
+
+.mmj-movesize-card.active {
+    font-family: "Font Awesome 7 Pro Solid";
+
+    font-weight: 900;
+
+    border-color: #116087;
+
+    box-shadow: 0 4px 12px rgba(18, 50, 105, 0.12);
+}
+
+.mmj-movesize-card.active::after {
+    content: "✔";
+
+    position: absolute;
+
+    top: 8px;
+
+    right: 10px;
+
+    border-radius: 50%;
+}
+
+@media (max-width: 575.98px) {
+    .mmj-movesize-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===== MMJ Inline Calendar (Step 3) ===== */
+
+.mmj-cal {
+    border: 1px solid #e3e8ef;
+
+    border-radius: 16px;
+
+    padding: 14px;
+
+    box-shadow: 0 2px 8px rgba(18, 50, 105, 0.06);
+
+    background: #fff;
+
+    width: 100%;
+}
+
+#mmj-date-inline {
+    width: 100%;
+
+    display: block;
+}
+
+/* In case any legacy markup still renders a text input for moveDate, hide it in the modal */
+
+#ModalForm input#moveDate[type="text"] {
+    display: none !important;
+}
+
+.mmj-cal__header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+}
+
+.mmj-cal__title {
+    font-weight: 700;
+
+    color: #123269;
+
+    font-family: var(--family);
+}
+
+.mmj-cal__nav {
+    border: none;
+
+    background: #f2f5fa;
+
+    color: #123269;
+
+    width: 36px;
+
+    height: 36px;
+
+    border-radius: 10px;
+
+    line-height: 36px;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.mmj-cal__week {
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    gap: 6px;
+
+    margin: 8px 0;
+}
+
+.mmj-cal__wd {
+    text-align: center;
+
+    font-size: 12px;
+
+    color: #64748b;
+}
+
+.mmj-cal__grid {
+    display: grid;
+
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+
+    gap: 5px;
+}
+
+.mmj-cal__cell {
+    border: 1px solid #e5eaf1;
+
+    background: #f8fafc;
+
+    min-height: 28px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 400;
+
+    color: #132c2f;
+
+    font-family: var(--para-family);
+
+    font-size: 14px;
+}
+
+.mmj-cal__cell[disabled],
+.mmj-cal__cell.mmj-cal__cell--disabled {
+    opacity: 0.4;
+
+    cursor: not-allowed;
+}
+
+.mmj-cal__cell--start,
+.mmj-cal__cell--end,
+.mmj-cal__cell--selected {
+    background: #116087;
+
+    color: #fff;
+}
+
+.mmj-cal__cell--inrange {
+    background: #ffe3c2;
+
+    border-color: #ffd39d;
+}
+
+.mmj-cal__cell--empty {
+    background: transparent;
+
+    border: none;
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+    #ModalForm .modal-content {
+        padding: 20px 10px;
+
+        border-radius: 30px !important;
+    }
+
+    #ModalForm .modal-content::before {
+        border-radius: 30px;
+    }
+}  
+@media (max-width: 575.98px) {
+     #ModalForm .modal-content {
+        max-height: 100% !important;
+     }
+      #ModalForm .modal-content {
+        padding: 20px;
+
+        border-radius: 0px !important;
+    }
+     .modal.show .modal-dialog{
+        top: 0 !important;
+     }
+     .mmj-date-summary__box{
+        border: 2px dashed #12326940;
+    background: #11608717;
+    border-radius: 12px;
+    padding: 3px 14px;
+    font-family: var(--family);
+    color: #123269;
+    font-size: 10px;
+     }
+}
+div#modal_distance_display {
+    font-size: 18px !important;
+    color: #000 !important;
+    text-align: center;
+    margin-top: 20px;
+}

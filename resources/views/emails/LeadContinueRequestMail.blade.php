@@ -1,0 +1,1 @@
+{{ $company->company_name }} request to continue his leads.

@@ -1,0 +1,474 @@
+ main.pb-0 {
+     margin-top: 0px !important;
+ }
+
+ h2 {
+     font-size: 32px !important;
+     margin: 40px auto 20px !important;
+     font-weight: 600 !important;
+ }
+
+ h6 {
+     font-weight: 600 !important;
+ }
+
+ p {
+     font-weight: 400 !important;
+     font-family: var(--para-family) !important;
+     font-size: 20px !important;
+     line-height: 36px !important;
+     letter-spacing: 0.2px !important;
+     margin-bottom: 20px !important;
+ }
+
+ .container_main {
+     max-width: 1020px;
+     margin: 0 auto;
+ }
+
+ .hero_banner {
+     min-height: 800px;
+     background-image: url(../img/search_mover_banner.jpg);
+     background-size: cover;
+     background-position: center bottom;
+     position: relative;
+     background-color: rgba(112, 157, 216, 0.15);
+ }
+
+ #moving_comp {
+     background: #fff;
+     box-shadow: 0 20px 50px rgb(0 75 133 / 15%);
+     border-radius: 15px;
+     padding: 20px 10px;
+     height: auto
+ }
+
+ #float-rating-div .rating-xs,
+ #float-rating-div.cards-rating .rating-xs {
+     font-size: 1.2em;
+ }
+
+ .highlight {
+     background-color: yellow;
+     font-weight: bold;
+     /* color: white; */
+ }
+
+
+ .rating-container.rating-xs.rating-animate.rating-disabled {
+     width: auto;
+     padding: 0%;
+ }
+
+ .pagination-items {
+     --bs-gutter-x: 1.5rem;
+     --bs-gutter-y: 0;
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: calc(-1 * var(--bs-gutter-y));
+     margin-right: calc(-0.5 * var(--bs-gutter-x));
+     margin-left: calc(-0.5 * var(--bs-gutter-x));
+ }
+
+ .company_search_card {
+     height: 100% !important;
+ }
+
+ .newsletter-area {
+     margin-top: 30px;
+ }
+
+ .search-container {
+     align-items: center;
+     gap: 10px;
+     flex-wrap: wrap;
+     min-width: 320px;
+ }
+
+ .search-input {
+     outline: none;
+     box-shadow: none;
+     width: 100%;
+     padding: 5px 10px;
+     font-family: var(--para-family);
+     background-color: #EBFAFF;
+     border: 0px solid #116087 !important;
+     border-radius: 25px;
+     margin-bottom: 15px;
+ }
+
+ .h2_heading {
+     font-size: 32px;
+ }
+
+ .form-group.search-select {
+     border-bottom: 2px solid #116087;
+     padding: 0px 0px;
+     margin-bottom: 20px;
+ }
+
+ .search-input::placeholder {
+     color: #000000d0;
+     font-family: var(--para-family);
+     font-size: 17px;
+ }
+
+ .search-select {
+     flex: 0 0 auto;
+     width: auto;
+     padding: 5px 0px;
+ }
+
+ .default-btn {
+     background-color: #116087;
+     color: #fff;
+     border: none;
+     border-radius: 10px;
+     padding: 10px 20px;
+     transition: background-color 0.3s ease;
+     flex: 0 0 auto;
+     height: 52px;
+ }
+
+ .search_company_details li {
+     padding: 10px !important;
+     background-color: #f0f3f6;
+     border-radius: 7px;
+     width: max-content;
+ }
+
+ .upper_banner_search {
+     /* padding: 30px; */
+     padding-top: 130px !important;
+     /* display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20px;
+     color: #1e1a1a; */
+ }
+
+ .upper_banner_search p {
+     font-size: 18px;
+     font-weight: 500;
+ }
+
+ #title-of-company-name {
+     color: #0f282b;
+     opacity: 1;
+     font-size: 20px;
+     font-weight: 800;
+ }
+
+ #card-of-services {
+     background-color: #F7FAFC;
+     border-radius: 10px;
+     min-height: auto;
+ }
+
+ .rating_tot {
+     font-size: 18px !important;
+     font-weight: 600;
+     margin-bottom: 10px;
+     display: block;
+ }
+
+ .avg_rating {
+     color: #000000;
+     font-size: 1.8rem;
+     font-family: var(--para-family);
+     font-weight: 600;
+ }
+
+ button.btn.call_btn {
+     background-color: #fff;
+     color: #116087;
+     font-size: 18px;
+     font-weight: 600;
+     text-transform: capitalize;
+     border-radius: 5px;
+     border: 2px solid #116087;
+     font-family: var(--para-family);
+     padding: 3px 10px;
+
+ }
+
+ button.btn.call_btn:hover {
+     background-color: #116087;
+     color: #fff
+ }
+
+ button.btn.quote_btn {
+     background-color: #ff8900;
+     color: #fff;
+     font-size: 18px;
+     border-radius: 5px;
+     text-transform: capitalize;
+     font-family: var(--para-family);
+     font-weight: 400;
+     padding: 3px 10px;
+     border: 2px solid #ff8900;
+ }
+
+ ul.list-unstyled.search_company_details.m-0.p-0.mt-2 {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+
+ .miles_upp {
+     font-size: 18px;
+     color: #000;
+     font-weight: 400;
+     margin-top: 10px;
+ }
+
+ .secure_info {
+     font-size: 17px !important;
+     font-weight: 500 !important;
+     margin-top: 5px !important;
+ }
+
+ @media (max-width: 768px) {
+     .search-container {
+         flex-direction: column;
+         gap: 10px;
+     }
+
+     .search-input {
+         width: 100%;
+     }
+
+     .search-select,
+     .default-btn {
+         width: 100%;
+     }
+ }
+
+ .for_top_bord {
+     border-top: 2px solid #f5f2fa;
+     padding-top: 10px;
+     margin-top: 10px;
+ }
+
+ select#sort_by:focus {
+     border: 0 !important;
+     padding: 10px 0 !important;
+ }
+
+ select#sort_order:focus {
+     border: 0 !important;
+     padding: 10px 0 !important;
+ }
+
+ select#is_claimed:focus {
+     border: 0 !important;
+     padding: 10px 0 !important;
+ }
+
+ @media screen and (max-width: 768px) {
+     .company_search_card .img-fluid {
+         width: 150px !important;
+     }
+ }
+
+ .form_wrapper {
+     background-color: #dfeaec00;
+     padding: 0px;
+     border: 0px solid #116087;
+ }
+
+ .main_banner_form {
+     border-radius: 20px;
+     padding: 24px 32px;
+     background-color: #C9ECF8;
+     border: 1px solid #0000001A;
+ }
+
+ .banner_para {
+     color: #000000;
+     margin: 5px 0;
+     font-size: 32px;
+     text-align: center !important;
+     font-family: var(--family);
+     font-weight: 600;
+ }
+
+ .form_heading {
+     font-size: 32px;
+     font-weight: 600;
+     text-align: center;
+ }
+
+ .miles_upp {
+     font-size: 21px;
+     color: #1e1a1a;
+     font-weight: 500;
+     margin-top: 10px;
+ }
+
+ .form_bg {
+     background-color: #EBFAFF;
+     padding: 12px;
+     border-radius: 50px;
+ }
+
+ .input_outer {
+     background-color: #fff !important;
+     padding: 7px 20px !important;
+     border-radius: 45px !important;
+     border: 0px solid #a8b9d9 !important;
+ }
+
+ .input_outer label {
+     font-size: 16px;
+     font-weight: 600;
+     color: #1e1a1a;
+ }
+
+ .input_outer input {
+     width: 100%;
+     font-size: 16px;
+     outline: 0;
+     border-bottom: 0px solid #00000021 !important;
+     margin-top: 2px;
+     font-family: var(--para-family);
+     font-weight: 400;
+     color: #000 !important;
+ }
+
+ .quote-btn {
+     font-weight: 400;
+     color: white;
+     font-size: 20px;
+     background: var(--bg);
+     border-width: initial;
+     border-style: none;
+     border-color: initial;
+     border-image: initial;
+     padding: 17px 45px;
+     border-radius: 50px;
+ }
+
+ @media (max-width: 1200px) {
+     .form_bg {
+         padding: 12px;
+         border-radius: 10px;
+     }
+
+     .upper_banner_search p {
+         font-size: 18px;
+         font-weight: 500;
+         text-align: center;
+     }
+ }
+
+ @media (max-width: 768px) {
+     .upper_banner_search {
+         padding: 30px;
+         padding-top: 140px !important;
+     }
+ }
+
+ @media (max-width: 500px) {
+
+     .miles_upp {
+         text-align: center;
+     }
+
+
+     .form_heading {
+         font-size: 22px;
+         font-weight: 600;
+         text-align: center;
+     }
+
+     .miles_upp {
+         font-size: 18px;
+         color: #1e1a1a;
+         font-weight: 500;
+         margin-top: 10px;
+     }
+
+     #title-of-company-name {
+         text-align: center;
+     }
+ }
+
+ /* ======= Popular Cities ======= */
+ .popular-cities-section {
+     background-color: #fff;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ .popular-title {
+     font-weight: 700;
+     font-size: 1.5rem;
+     color: #000;
+ }
+
+ .city-links li {
+     margin-bottom: 25px;
+     font-size: 20px;
+ }
+
+ .city-links i {
+     font-size: 0.5rem;
+     color: var(--bg);
+     margin-right: 8px;
+ }
+
+ .city-links a {
+     color: #000;
+     text-decoration: none;
+     transition: color 0.3s ease;
+ }
+
+ .city-links a:hover {
+     color: var(--bg);
+ }
+
+ /* ======= Other Categories ======= */
+ .other-category-section {
+     background-color: #fff;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ .category-title {
+     font-weight: 700;
+     color: #000;
+ }
+
+ .category-subtitle {
+     color: #555;
+     font-size: 0.95rem;
+ }
+
+ .category-card {
+     background-color: #d2f0fa;
+     border-radius: 12px;
+     transition: all 0.3s ease;
+     cursor: pointer;
+ }
+
+ .category-card:hover {
+     background-color: #bce4f6;
+     transform: translateY(-5px);
+ }
+
+ .category-icon {
+     font-size: 2.5rem;
+     color: #1b6f94;
+ }
+
+ .category-name {
+     font-weight: 600;
+     color: #000;
+ }
+
+ /* ======= Responsive ======= */
+ @media (max-width: 768px) {
+     .category-card {
+         padding: 1.5rem;
+     }
+ }

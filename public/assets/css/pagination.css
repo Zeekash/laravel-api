@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+    --albersans-family: "Albert Sans", sans-serif;
+    --primary-color: rgb(30 117 187);
+    --secondary-color: #2b2f32;
+    --third-color: #a3a5a7;
+    --four-color: #ececec;
+    --footer-border: #979797;
+    --dark-blue: #123269;
+}
+
+/* PAGINATION STYLING START  */
+
+.pagination_links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.pagination_links span {
+    color: white;
+    background-color: #116087;
+
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pagination_links a {
+    color: #17122d;
+    font-family: var(--albersans-family);
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+
+.pagination_links a:hover {
+    background-color: transparent;
+    color: rgb(23 18 45);
+}

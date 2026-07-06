@@ -1,2 +1,35 @@
 User-agent: *
-Disallow:
+
+# Block only specific parameters
+Disallow: /*?sort=*
+Disallow: /*?page=*
+Disallow: /*?from=*
+Disallow: /*?s=*
+Disallow: /*?search=*
+Disallow: /*?aid=*
+Disallow: /api/
+Disallow: /checklist/download
+# Block sensitive pages
+Disallow: /admin
+Disallow: /contact-mover/
+
+# Optional: block review pages
+Disallow: /review/
+Disallow: /public/
+Disallow: /claim-company/*
+Disallow: /company/register
+Disallow:/login
+Disallow:/logout
+Disallow:/cdn-cgi/*
+# Sitemaps
+Sitemap: https://mymovingjourney.com/sitemap.xml
+Sitemap: https://mymovingjourney.com/sitemap-main.xml
+Sitemap: https://mymovingjourney.com/statetocity.routes.sitemap_index.xml
+Sitemap: https://mymovingjourney.com/citytocitydiffstate.routes.sitemap_index.xml
+Sitemap: https://mymovingjourney.com/citytostate.routes.sitemap_index.xml
+
+
+
+
+
+

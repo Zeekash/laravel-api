@@ -1,0 +1,523 @@
+main.pb-0 {
+    margin-top: 0px !important;
+}
+
+b,
+strong,
+b {
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 32px !important;
+    margin: 40px auto 20px !important;
+    font-weight: 600 !important;
+}
+
+h6 {
+    font-weight: 600 !important;
+}
+
+p {
+    font-weight: 400 !important;
+    font-family: var(--para-family) !important;
+    font-size: 20px !important;
+    line-height: 36px !important;
+    letter-spacing: 0.2px !important;
+    margin-bottom: 12px !important;
+}
+
+.container_main {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.hero {
+    min-height: 600px;
+    background-image: url(../img/about-us.png);
+    background-size: inherit;
+    background-position: center;
+    position: relative;
+    background-color: rgba(112, 157, 216, 0.15);
+    background-repeat: no-repeat;
+}
+
+.banner_head {
+    padding-top: 150px;
+}
+
+.banner_head h1 {
+    font-size: 48px;
+    font-weight: 600 !important;
+}
+
+.banner_head p {
+    font-size: 28px;
+    font-weight: 400 !important;
+}
+
+/* What We Focus On Section */
+.focus-section {
+    padding: 20px 0;
+    background: white;
+}
+
+.focus-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.focus-card {
+    background: #F7FAFC;
+    border-radius: 20px;
+    padding: 20px;
+    height: 100%;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.cta_social {
+    background: #116087;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.cta_social h3 {
+    font-weight: 400 !important;
+    font-size: 22px;
+    color: #fff;
+}
+
+.focus_card {
+    background: #bee2ee;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+
+.focus-icon {
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 25px;
+    border: 0px solid #116087;
+}
+
+.focus-icon svg {
+    width: 45px;
+    height: 45px;
+    stroke: var(--bg);
+    stroke-width: 1;
+}
+
+.focus-card h3 {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.focus_card h3 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #1e1a1a;
+}
+
+.focus-card p {
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 400;
+    margin: 0;
+    min-height: 120px;
+}
+
+.btn-comp {
+    background: #fff;
+    font-weight: 400;
+    border-radius: 999px;
+    padding: 8px 40px;
+    color: var(--bg);
+    font-size: 18px;
+    border: 2px solid var(--bg);
+    font-weight: 600;
+}
+
+.btn-comp:hover {
+    background: var(--bg);
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 8px 40px;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid var(--bg);
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: #1a2130;
+}
+
+.intro-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.step-section {
+    margin-bottom: 30px;
+    border: 1px solid #00000033;
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+
+.step-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    background-color: #fff;
+    width: max-content;
+    padding: 0 10px;
+    color: #1a2130;
+}
+
+.step-subtitle {
+    color: #1e1a1a;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.step-content {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Criteria */
+.criteria-section {
+    margin-bottom: 40px;
+}
+
+.criteria-lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.criteria-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    font-size: 1.1rem;
+    color: #1a1a1a;
+}
+
+.check-icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.check-icon svg {
+    width: 18px;
+    height: 18px;
+    stroke: var(--bg);
+    stroke-width: 3;
+    fill: none;
+}
+
+.criteria-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1 1 250px;
+}
+
+.criteria-list li {
+    margin-bottom: 10px;
+}
+
+.according_to {
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    margin: auto;
+    font-family: var(--family) !important;
+}
+
+.according_t {
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    margin: auto;
+    font-family: var(--family);
+}
+
+.listing {
+    background-color: #c9ecf8;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.location-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: var(--para-family);
+    line-height: 36px;
+    letter-spacing: 0.2px;
+}
+
+.location-item i {
+    color: var(--bg);
+    font-size: 1.2rem;
+}
+
+.listed_sty li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: var(--para-family);
+    font-weight: 300;
+}
+
+.ranking-section {
+    padding: 60px 20px;
+    background: var(--bg);
+    border-radius: 15px;
+}
+
+.ranking-section h2 {
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+
+.ranking-section p {
+    color: #fff !important;
+}
+.git-card {
+    background: linear-gradient(135deg, #116087 0%, #30779b 100%);
+    border-radius: 16px;
+    padding: 30px;
+    color: #fff;
+}
+.git-card h2 {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    color: #fff;
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+}
+.git-card p {
+    font-size: 18px !important;
+    line-height: 28px !important;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 15px !important;
+}
+.git-social {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.git-social-icons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.git-social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-family: "Google Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.git-social-btn.facebook {
+    background-color: #1877f2;
+    color: #fff;
+}
+.git-social-btn.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #fff;
+}
+.git-social-btn.twitter {
+    background-color: #1DA1F2;
+    color: #fff;
+}
+.git-social-btn.linkedin {
+    background-color: #0A66C2;
+    color: #fff;
+}
+.git-social-btn.pinterest {
+    background-color: #E60023;
+    color: #fff;
+}
+.git-social-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .git-card h2 {
+        font-size: 22px;
+    }
+    .git-card p {
+        font-size: 16px;
+    }
+    .focus-section {
+        padding: 50px 0;
+    }
+
+    .focus-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+
+    .focus-card {
+        padding: 35px 25px;
+        margin-bottom: 20px;
+    }
+
+    .focus-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .focus-card p {
+        font-size: 0.95rem;
+    }
+
+    .ranking-section {
+        padding: 30px 20;
+    }
+
+    .ranking-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .ranking-section .subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 40px;
+    }
+
+    .criteria-item {
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+
+    .img_wrapp {
+        background-color: #fff;
+        width: 120px;
+        height: 120px;
+        margin: 20px auto;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #00000085;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+        .banner_head h1 {
+        font-size: 40px;
+        font-weight: 600 !important;
+        text-align: center;
+    }
+    .banner_head {
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+.hero {
+        min-height: auto;
+        background-image: url(../img/about-us.png);
+        background-size: inherit;
+        background-position: unset;
+        position: relative;
+        background-color: rgba(112, 157, 216, 0.15);
+        background-repeat: no-repeat;
+    }
+    .banner_head p {
+        font-size: 22px !important;
+        font-weight: 400 !important;
+        text-align: center;
+        margin: auto;
+    }
+
+    .focus-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .focus-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .focus-icon svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .focus-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .ranking-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .ranking-section .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .criteria-item {
+        font-size: 0.9rem;
+    }
+
+    .check-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .check-icon svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .cta_social {
+        max-width: 310px;
+        margin: auto;
+    }
+}
