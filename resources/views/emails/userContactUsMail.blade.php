@@ -1,280 +1,242 @@
 <!DOCTYPE html>
-
 <html lang="en" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
 
 <head>
-	<title></title>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-	<!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]-->
-	<!--[if !mso]><!-->
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css" />
-	<!--<![endif]-->
-	<style>
-		* {
-			box-sizing: border-box;
-		}
+    <title>New Contact Request</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet" type="text/css" />
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Nunito', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+        }
 
-		body {
-			margin: 0;
-			padding: 0;
-		}
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            -webkit-text-size-adjust: none;
+            text-size-adjust: none;
+        }
 
-		a[x-apple-data-detectors] {
-			color: inherit !important;
-			text-decoration: inherit !important;
-		}
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: inherit !important;
+        }
 
-		#MessageViewBody a {
-			color: inherit;
-			text-decoration: none;
-		}
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
 
-		p {
-			line-height: inherit
-		}
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
 
-		.desktop_hide,
-		.desktop_hide table {
-			mso-hide: all;
-			display: none;
-			max-height: 0px;
-			overflow: hidden;
-		}
+        .header {
+            background-color: #123269;
+            padding: 30px 20px;
+            text-align: center;
+        }
 
-		@media (max-width:620px) {
-			.desktop_hide table.icons-inner {
-				display: inline-block !important;
-			}
+        .header img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
 
-			.icons-inner {
-				text-align: center;
-			}
+        .header h1 {
+            color: #ffffff;
+            font-size: 24px;
+            margin: 20px 0 0 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
 
-			.icons-inner td {
-				margin: 0 auto;
-			}
+        .content {
+            padding: 40px 30px;
+            color: #333333;
+        }
 
-			.fullMobileWidth,
-			.row-content {
-				width: 100% !important;
-			}
+        .content h2 {
+            font-size: 20px;
+            color: #123269;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
 
-			.mobile_hide {
-				display: none;
-			}
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0 0 20px 0;
+            color: #555555;
+        }
 
-			.stack .column {
-				width: 100%;
-				display: block;
-			}
+        .details-box {
+            background-color: #f9fbff;
+            border-left: 4px solid #eb0505;
+            padding: 20px;
+            border-radius: 0 4px 4px 0;
+            margin-bottom: 30px;
+        }
 
-			.mobile_hide {
-				min-height: 0;
-				max-height: 0;
-				max-width: 0;
-				overflow: hidden;
-				font-size: 0px;
-			}
+        .details-table {
+            width: 100%;
+        }
 
-			.desktop_hide,
-			.desktop_hide table {
-				display: table !important;
-				max-height: none !important;
-			}
+        .details-table td {
+            padding: 8px 0;
+            font-size: 16px;
+            line-height: 1.5;
+            vertical-align: top;
+        }
 
-			.row-1 .column-1 .block-2.heading_block td.pad {
-				padding: 10px 0 !important;
-			}
+        .details-label {
+            font-weight: 700;
+            color: #101112;
+            width: 30%;
+        }
 
-			.row-1 .column-1 .block-2.heading_block h1 {
-				font-size: 24px !important;
-			}
+        .details-value {
+            color: #123269;
+            width: 70%;
+            font-weight: 700;
+        }
 
-			.row-1 .column-1 .block-4.paragraph_block td.pad>div {
-				font-size: 22px !important;
-			}
+        .message-box {
+            background-color: #ffffff;
+            border: 1px solid #e1e5eb;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 5px;
+            color: #123269;
+            font-weight: 400;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
 
-			.row-1 .column-1 .block-4.paragraph_block td.pad {
-				padding: 5px 0 !important;
-			}
+        .footer {
+            background-color: #f4f6f9;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #888888;
+        }
 
-			.row-1 .column-1 .block-3.paragraph_block td.pad>div {
-				font-size: 18px !important;
-			}
+        @media (max-width: 620px) {
+            .content {
+                padding: 30px 20px;
+            }
 
-			.row-1 .column-1 .block-3.paragraph_block td.pad {
-				padding: 10px 0 5px !important;
-			}
-		}
-	</style>
+            .details-label,
+            .details-value {
+                display: block;
+                width: 100%;
+            }
+
+            .details-label {
+                padding-bottom: 2px;
+            }
+
+            .details-value {
+                padding-top: 0;
+                padding-bottom: 15px;
+            }
+        }
+    </style>
 </head>
 
-<body
-	style="background-color: transparent; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
-	<table border="0" cellpadding="0" cellspacing="0" class="nl-container" role="presentation"
-		style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: transparent;" width="100%">
-		<tbody>
-			<tr>
-				<td>
-					<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-1"
-						role="presentation"
-						style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;" width="100%">
-						<tbody>
-							<tr>
-								<td>
-									<table align="center" border="0" cellpadding="0" cellspacing="0"
-										class="row-content stack" role="presentation"
-										style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; border-radius: 0; width: 600px;"
-										width="600">
-										<tbody>
-											<tr>
-												<td class="column column-1"
-													style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-right: 10px; padding-left: 10px; vertical-align: top; padding-top: 5px; padding-bottom: 5px; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;"
-													width="100%">
-													<table border="0" cellpadding="0" cellspacing="0"
-														class="image_block block-1" role="presentation"
-														style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
-														width="100%">
-														<tr>
-															<td class="pad"
-																style="width:100%;padding-right:0px;padding-left:0px;">
-																<div align="left" class="alignment"
-																	style="line-height:10px"><img
-																		class="fullMobileWidth" src="https://mymovingjourney.com/assets/img/logo.png"
-																		style="display: block; height: auto; border: 0; width: 290px; max-width: 100%;"
-																		width="290" /></div>
-															</td>
-														</tr>
-													</table>
-													<table border="0" cellpadding="0" cellspacing="0"
-														class="heading_block block-2" role="presentation"
-														style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
-														width="100%">
-														<tr>
-															<td class="pad"
-																style="width:100%;text-align:center;padding-top:20px;padding-bottom:20px;">
-																<h1
-																	style="margin: 0; color: #123269; font-size: 40px; font-family: 'Nunito', Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 120%; text-align: left; direction: ltr; font-weight: 700; letter-spacing: normal; margin-top: 0; margin-bottom: 0;">
-																	<span class="tinyMce-placeholder">Contact Us</span></h1>
-															</td>
-														</tr>
-													</table>
-													<table border="0" cellpadding="0" cellspacing="0"
-														class="paragraph_block block-3" role="presentation"
-														style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"
-														width="100%">
-														<tr>
-															<td class="pad">
-																<div
-																	style="color:#101112;font-size:18px;font-family:'Nunito', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-weight:700;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:21.599999999999998px;">
-																	<p style="margin: 0;">User contacted to your website.</p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table border="0" cellpadding="0" cellspacing="0"
-														class="paragraph_block block-4" role="presentation"
-														style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"
-														width="100%">
-														<tr>
-															<td class="pad"
-																style="padding-top:10px;padding-bottom:10px;">
-																<div
-																	style="color:#101112;font-size:24px;font-family:'Nunito', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-weight:700;line-height:180%;text-align:left;direction:ltr;letter-spacing:1px;mso-line-height-alt:43.2px;">
-																	<p style="margin: 0;"><u><span
-																				style="color: #eb0505;"><strong>DETAILS</strong></span></u>
-																	</p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table border="0" cellpadding="0" cellspacing="0"
-														class="paragraph_block block-5" role="presentation"
-														style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"
-														width="100%">
-														<tr>
-															<td class="pad">
-																<div
-																	style="color:#101112;font-size:18px;font-family:'Nunito', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-weight:700;line-height:180%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:32.4px;">
-																	<p style="margin: 0;">Name : <span
-																			style="color: #123269;">{{$user_contact_us->name}}</span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table border="0" cellpadding="0" cellspacing="0"
-														class="paragraph_block block-6" role="presentation"
-														style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"
-														width="100%">
-														<tr>
-															<td class="pad">
-																<div
-																	style="color:#101112;font-size:18px;font-family:'Nunito', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-weight:700;line-height:180%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:32.4px;">
-																	<p style="margin: 0;">Email  : <span
-																			style="color: #123269;">{{$user_contact_us->email}}</span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table border="0" cellpadding="0" cellspacing="0"
-														class="paragraph_block block-7" role="presentation"
-														style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"
-														width="100%">
-														<tr>
-															<td class="pad">
-																<div
-																	style="color:#101112;font-size:18px;font-family:'Nunito', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-weight:700;line-height:180%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:32.4px;">
-																	<p style="margin: 0;">Phone No. : <span
-																			style="color: #123269;">{{$user_contact_us->phone_no}}</span>
-																	</p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table border="0" cellpadding="0" cellspacing="0"
-														class="paragraph_block block-8" role="presentation"
-														style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"
-														width="100%">
-														<tr>
-															<td class="pad">
-																<div
-																	style="color:#101112;font-size:18px;font-family:'Nunito', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-weight:700;line-height:180%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:32.4px;">
-																	<p style="margin: 0;">Subject : <span
-																			style="color: #123269;">{{$user_contact_us->subject}}</span>
-																	</p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table border="0" cellpadding="0" cellspacing="0"
-														class="paragraph_block block-9" role="presentation"
-														style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"
-														width="100%">
-														<tr>
-															<td class="pad">
-																<div
-																	style="color:#101112;font-size:18px;font-family:'Nunito', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-weight:700;line-height:180%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:32.4px;">
-																	<p style="margin: 0;">State : <span
-																			style="color: #123269;">{{$user_contact_us->message}}</span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</td>
-			</tr>
-		</tbody>
-	</table><!-- End -->
+<body>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+        style="background-color: #f4f6f9; padding: 40px 20px;">
+        <tbody>
+            <tr>
+                <td align="center">
+                    <!-- Main Container -->
+                    <table border="0" cellpadding="0" cellspacing="0" class="container">
+                        <tbody>
+                            <!-- Header Section -->
+                            <tr>
+                                <td class="header">
+                                    <img src="{{ asset('assets/img/logo.png') }}"
+                                        alt="My Moving Journey Logo" />
+                                    <h1>New Contact Inquiry</h1>
+                                </td>
+                            </tr>
+
+                            <!-- Content Section -->
+                            <tr>
+                                <td class="content">
+                                    <h2>Hello,</h2>
+                                    <p>A user has recently submitted a contact form on your website. Here are the
+                                        details of their inquiry:</p>
+
+                                    <!-- Details Highlight Box -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td class="details-box">
+                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                    class="details-table">
+                                                    <tr>
+                                                        <td class="details-label">Name:</td>
+                                                        <td class="details-value">{{ $user_contact_us->name }}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="details-label">Email:</td>
+                                                        <td class="details-value">
+                                                            <a href="mailto:{{ $user_contact_us->email }}"
+                                                                style="color: #123269; text-decoration: none;">
+                                                                {{ $user_contact_us->email }}
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="details-label">Phone No:</td>
+                                                        <td class="details-value">
+                                                            <a href="tel:{{ $user_contact_us->phone_no }}"
+                                                                style="color: #123269; text-decoration: none;">
+                                                                {{ $user_contact_us->phone_no }}
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="details-label">Subject:</td>
+                                                        <td class="details-value">{{ $user_contact_us->subject }}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="details-label">Message:</td>
+                                                        <td class="details-value">{{ $user_contact_us->message }}</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                            </tr>
+
+                            <!-- Footer Section -->
+                            <tr>
+                                <td class="footer">
+                                    <p style="margin: 0;">This is an automated notification from your website.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- End Main Container -->
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>
