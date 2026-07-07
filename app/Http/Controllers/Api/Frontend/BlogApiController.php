@@ -20,6 +20,8 @@ class BlogApiController extends Controller
             'title',
             'image',
             'img_alt',
+            'created_at',
+            'admin_id',
         ])
             ->where('is_published', 1)
             ->orderByRaw("
