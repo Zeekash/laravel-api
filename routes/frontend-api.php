@@ -28,6 +28,9 @@ Route::post('/company/register', 'Api\Frontend\RegistrationApiController@postReg
 //Home Page
 Route::get('/home', 'Api\Frontend\HomeApiController@homePage');
 
+//Company Profile Page
+Route::get('/mover/{company:slug}', 'Api\Frontend\CompanyApiController@companyShow');
+
 // Main API
 Route::controller(App\Http\Controllers\Api\Frontend\MainApiController::class)->group(function () {
     Route::get('/states', 'states');
