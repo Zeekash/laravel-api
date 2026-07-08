@@ -33,6 +33,8 @@ Route::controller(App\Http\Controllers\Api\Frontend\MainApiController::class)->g
     Route::get('/states', 'states');
     Route::get('/fetch-cities', 'fetchCities');
     Route::get('/company/search/{slug?}', 'searchCompaniesApi')->name('api.company.search');
+    Route::get('/mover-list', 'moverList');
+    Route::post('/contact-us', 'usercontactUspost');
 });
 // Blog API
 Route::controller(App\Http\Controllers\Api\Frontend\BlogApiController::class)->group(function () {
