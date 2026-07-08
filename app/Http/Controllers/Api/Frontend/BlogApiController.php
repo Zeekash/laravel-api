@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin;
 use App\Models\Post;
 use App\Models\PostCategory;
 use App\Models\PostFaq;
@@ -64,6 +65,7 @@ class BlogApiController extends Controller
         }
 
         $categories = PostCategory::all();
+        $authors = Admin::all();
 
         $postFaqs = PostFaq::where('post_id', $post->id)->get();
 
@@ -103,6 +105,7 @@ class BlogApiController extends Controller
                 'post' => $post,
                 'featured_posts' => $featuredPosts,
                 'categories' => $categories,
+                'authors' => $authors,
                 'faqs' => $postFaqs,
                 // 'visit_count' => $blogVisitCount,
 
