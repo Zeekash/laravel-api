@@ -13,6 +13,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
+use App\User;
+use App\Models\UserVerify;
+use Illuminate\Support\Str;
 
 class MainApiController extends Controller
 {
@@ -249,5 +252,187 @@ class MainApiController extends Controller
                 ],
             ], 500);
         }
+    }
+
+    public function moverReviewPost(Request $request, $slug)
+    {
+        $company = Company::where('slug', $slug)->first();
+        if (!$company) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Company not found.',
+            ], 404);
+        }
+
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'email' => 'required|email:rfc,dns|max:255',
+
+            'overall_rating' => 'required|integer|min:1|max:5',
+            'review_subject' => 'required|string|max:255',
+            'your_review' => 'required|string|min:15',
+
+            'service_cost' => 'required|numeric|min:0',
+            'currency' => 'required|string|max:10',
+            'move_type' => 'required|string|max:100',
+            'move_size' => 'required|string|max:100',
+            'quote' => 'nullable|string|max:255',
+
+            'pick_up_country_id' => 'required|integer',
+            'pick_up_state_id' => 'required|integer',
+            'pick_up_city_id' => 'required|integer',
+            'delivery_country_id' => 'required|integer',
+            'delivery_state_id' => 'required|integer',
+            'delivery_city_id' => 'required|integer',
+
+            'image1' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:4096',
+            'image2' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:4096',
+            'image3' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:4096',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Validation failed.',
+                'errors' => $validator->errors(),
+            ], 422);
+        }
+
+        $validatedData = $validator->validated();
+
+        $exists = User::where('email', $validatedData['email'])
+            ->where('company_id', $company->id)
+            ->exists();
+
+        if ($exists) {
+            return response()->json([
+                'success' => false,
+                'message' => 'You already reviewed this company!',
+            ], 400);
+        }
+
+        foreach (['image1', 'image2', 'image3'] as $key) {
+            if ($request->hasFile($key)) {
+                $file = $request->file($key);
+                $destinationPath = public_path("review/{$key}");
+                if (!file_exists($destinationPath)) {
+                    mkdir($destinationPath, 0755, true);
+                }
+                $imageName = date('YmdHis') . '_' . uniqid() . '.' . $file->getClientOriginalExtension();
+                $file->move($destinationPath, $imageName);
+                $validatedData[$key] = $imageName;
+            }
+        }
+
+        $user = new User();
+        $user->company_id = $company->id;
+        $user->name = $validatedData['name'];
+        $user->email = $validatedData['email'];
+        $user->overall_rating = $validatedData['overall_rating'];
+        $user->review_subject = $validatedData['review_subject'];
+        $user->your_review = $validatedData['your_review'];
+        $user->service_cost = $validatedData['service_cost'];
+        $user->currency = $validatedData['currency'];
+        $user->move_type = $validatedData['move_type'];
+        $user->move_size = $validatedData['move_size'];
+        $user->quote = $validatedData['quote'] ?? null;
+        $user->pick_up_country_id = $validatedData['pick_up_country_id'];
+        $user->pick_up_state_id = $validatedData['pick_up_state_id'];
+        $user->pick_up_city_id = $validatedData['pick_up_city_id'];
+        $user->delivery_country_id = $validatedData['delivery_country_id'];
+        $user->delivery_state_id = $validatedData['delivery_state_id'];
+        $user->delivery_city_id = $validatedData['delivery_city_id'];
+        $user->image1 = $validatedData['image1'] ?? null;
+        $user->image2 = $validatedData['image2'] ?? null;
+        $user->image3 = $validatedData['image3'] ?? null;
+        $user->client_ip = $request->ip();
+        $user->save();
+
+        $token = Str::random(64);
+        UserVerify::create([
+            'user_id' => $user->id,
+            'token'   => $token,
+        ]);
+
+        // Mail::mailer('noreply')->send(
+        //     'emails.userEmailVerification',
+        //     ['token' => $token, 'user' => $user, 'company' => $company],
+        //     function ($message) use ($user) {
+        //         $message->from(env('NOREPLY_USERNAME', 'noreply@mymovingjourney.com'), 'MyMovingJourney')
+        //             ->to($user->email)
+        //             ->subject('Confirm your review at MyMovingJourney - action needed');
+        //     }
+        // );
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Review submitted successfully. We sent you an email. Please verify your email.',
+            'data' => $user
+        ], 200);
+    }
+
+    public function resourcePageApi($slug)
+    {
+        $resourcePage = \App\Models\ResourcePage::where('slug', $slug)->first();
+        if (!$resourcePage) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Resource Page not found.',
+            ], 404);
+        }
+
+        $top_movers = \App\Models\ResourceTopMover::orderBy('position', 'asc')->where('resource_page_id', $resourcePage->id)->get();
+        $bottom_movers = \App\Models\ResourceBottomMover::orderBy('position', 'asc')->where('resource_page_id', $resourcePage->id)->get();
+        $other_movers = \App\Models\ResourceOtherMover::orderBy('position', 'asc')->where('resource_page_id', $resourcePage->id)->get();
+
+        $companyFields = [
+            'companies.id',
+            'companies.company_name',
+            'companies.image',
+            'companies.slug',
+            'companies.us_dot_no',
+            'companies.icc_mc_license_no',
+            'companies.is_claimed',
+            'companies.local_mover',
+            'companies.long_distance_mover',
+            'companies.phone_no',
+            'companies.company_website',
+            'companies.street',
+            'companies.state_id',
+            'companies.city_id',
+        ];
+
+        $data = Company::select($companyFields)
+            ->with([
+                'state:id,name,abv',
+                'city:id,name'
+            ])
+            ->withCount('verifiedUsers as total_reviews')
+            ->withAvg('verifiedUsers as average_rating', 'overall_rating')
+            ->withAvg('verifiedUsers as average_price', 'service_cost')
+            ->where('is_email_verified', 1)
+            ->orderBy('company_name', 'asc')
+            ->get();
+
+        $best_state_pages = \App\Models\BestStatePage::select('best_state_pages.*')
+            ->join('states', 'best_state_pages.state_id', '=', 'states.id')
+            ->orderBy('states.name', 'asc')
+            ->orderBy('best_state_pages.state_id', 'asc')
+            ->get();
+
+        $faqs = \App\Models\ResourcePageFaq::where('resource_page_id', $resourcePage->id)->get();
+
+        return response()->json([
+            'success' => true,
+            'data' => [
+                'resourcePage' => $resourcePage,
+                'top_movers' => $top_movers,
+                'bottom_movers' => $bottom_movers,
+                'other_movers' => $other_movers,
+                'companies' => $data,
+                'best_state_pages' => $best_state_pages,
+                'faqs' => $faqs,
+            ]
+        ]);
     }
 }
