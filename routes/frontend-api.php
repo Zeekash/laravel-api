@@ -38,6 +38,8 @@ Route::controller(App\Http\Controllers\Api\Frontend\MainApiController::class)->g
     Route::get('/company/search/{slug?}', 'searchCompaniesApi')->name('api.company.search');
     Route::get('/mover-list', 'moverList');
     Route::post('/contact-us', 'usercontactUspost');
+    Route::post('/review/{slug}', 'moverReviewPost');
+    Route::get('/resource-page/{slug}', 'resourcePageApi');
 });
 // Blog API
 Route::controller(App\Http\Controllers\Api\Frontend\BlogApiController::class)->group(function () {
